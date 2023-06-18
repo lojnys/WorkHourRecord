@@ -1,4 +1,4 @@
-
+import datetime as dt
 
 class WorkTime():
     
@@ -34,5 +34,15 @@ class WorkTime():
     def setNote(self, note: str) -> None:
         self.note = note
 
-    def setDate(self, date):
+    def setDate(self, date) -> None:
         self.date = date
+
+
+    def addToJSON(self) -> dict:
+        input = {
+            "hours": float(self.hours),
+            "rate": float(self.rate),
+            "note": self.note,
+            "date": self.date
+        }
+        return input
