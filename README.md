@@ -21,3 +21,10 @@ This application helps user keep track of the number of hours that they have wor
 
 *06/17/23*
 - Added functionality of the "Add Amount" button and the "Set Week" button
+
+*06/23/23*
+- Added one more button for adding more work time slots
+- Function of adding work time to the work time slot added
+- Created 'test' folder for the tests
+- Created a work time test using unittest
+
