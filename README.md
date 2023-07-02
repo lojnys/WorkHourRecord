@@ -28,3 +28,10 @@ This application helps user keep track of the number of hours that they have wor
 - Created 'test' folder for the tests
 - Created a work time test using unittest
 
+*07/01/23*
+- Added tests
+- Function of adding week
+    - New window with a label and a button
+    - button function of creating a WorkTimes and add to BiWeekly then dump to JSON
+- Added function on closing
+- Exported as an executable file

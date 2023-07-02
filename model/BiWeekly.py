@@ -24,8 +24,8 @@ class BiWeekly():
         self.lists.append(list)
 
 
-    def addToJSON(self, date) -> None:
-        list = [x.addToJSON(date) for x in self.lists]
+    def addToJSON(self) -> None:
+        list = [x.addToJSON(x.getDate()) for x in self.lists]
         dict = {"bi-weekly": list}
 
         with open("/Users/yushinnam/Desktop/python3/WorkHourRecord/data/data.json", "w") as file:

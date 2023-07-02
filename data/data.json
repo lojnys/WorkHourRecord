@@ -1,5 +1,1 @@
-{"bi-weekly": [
-    {"2023-06-15": [
-        {"hours": 5, "rate": 5, "note": "", "date": "2023-06-15"}
-        ]
-    }]}
+{"bi-weekly": [{"2023-06-15": [{"hours": 1.5, "rate": 20.0, "note": "Reading Town", "date": "2023-06-16"}, {"hours": 4.0, "rate": 20.0, "note": "Reading Town", "date": "2023-06-21"}, {"hours": 0.5, "rate": 20.0, "note": "Reading Town", "date": "2023-06-23"}, {"hours": 4.5, "rate": 20.0, "note": "Reading Town", "date": "2023-06-28"}, {"hours": 1.5, "rate": 20.0, "note": "Reading Town", "date": "2023-06-30"}]}, {"2023-07-01": []}]}

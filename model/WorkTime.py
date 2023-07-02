@@ -4,7 +4,7 @@ class WorkTime():
     
 
     # work time slot is created with given hours, rate, and any notes
-    def __init__(self, hours: float, rate: float, note: str, date) -> None:
+    def __init__(self, hours: float, rate: float, note, date) -> None:
         self.hours = hours
         self.rate = rate
         self.note = note
@@ -20,7 +20,7 @@ class WorkTime():
     
     def getNote(self) -> str:
         return self.note
-    
+
     def getDate(self):
         return self.date
     

@@ -15,15 +15,20 @@ class WorkTimes():
         return self.date
     
     def setList(self, list) -> None:
-        # self.list = list(map(list, lambda x: WorkTime(x["hours"], x["rate"], x["note"], x["date"])))
-        self.list = [WorkTime(x["hours"], x["rate"], x["note"], x['date']) for x in list]
+        self.list = [WorkTime(x["hours"], x["rate"], x['note'], x['date']) for x in list]
 
-    
+    def isEmpty(self) -> bool:
+        return self.list == []
+
+    def count(self) -> int:
+        result = 0
+        for x in self.list:
+            result += 1
+
+        return result
+
     def addWorkTime(self, workTime: WorkTime) -> None:
         self.list.append(workTime)
-
-    def removeWorkTime(self, workTime: WorkTime) -> None:
-        pass
 
     def addAmount(self) -> float:
         result = 0
