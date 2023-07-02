@@ -30,10 +30,11 @@ class WorkTimes():
     def addWorkTime(self, workTime: WorkTime) -> None:
         self.list.append(workTime)
 
-    def addAmount(self) -> float:
+    def addAmount(self, note) -> float:
         result = 0
         for workTime in self.list:
-            result += workTime.getHours() * workTime.getRate()
+            if note == workTime.getNote():
+                result += workTime.getHours() * workTime.getRate()
 
         return result
     

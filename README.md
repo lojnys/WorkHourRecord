@@ -35,3 +35,6 @@ This application helps user keep track of the number of hours that they have wor
     - button function of creating a WorkTimes and add to BiWeekly then dump to JSON
 - Added function on closing
 - Exported as an executable file
+- addAmount()
+    - Looks at notes - place of work, then organize/print the amount for each place
+    - Ex. "Place 1: $50, Place 2: $400, ..."

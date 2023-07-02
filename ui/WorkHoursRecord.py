@@ -40,8 +40,16 @@ def setWeek():
         
 
 def addAmount():
-    welcome.config(text=f"$ {works.addAmount()}")
-    # welcome.after(3000, welcome.config(text="Welcome"))
+
+    notes = set([work.getNote() for work in works.getList()])
+    printable_notes = [(note, works.addAmount(note)) for note in notes]
+    
+    printable_string = ""
+    for pair in printable_notes:
+        string = pair[0] + ": $" + str(pair[1]) + " "
+        printable_string += string
+    
+    welcome.config(text=printable_string)
 
 
 
